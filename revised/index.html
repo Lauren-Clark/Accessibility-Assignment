@@ -1,109 +1,326 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Margins, Padding, Borders, and Backgrounds</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+<!DOCTYPE html>
+<!-- added lang="en"-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- added meta tags for responsiveness -->
+     <meta name="description" content="This is a page on wild life and bears with Accessibility features">
+     <!-- meta SEO tag that tells web browsers the "preview" of what your page is when you type into google -->
+     <meta name="viewport" content="width=device-width">
+     <!-- makes the content render at the width of the device -->
 
-<link rel="stylesheet" href="main.css">
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet"> 
+    <title>Accessibility assessment</title>
+    <!-- let's change the google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 
 
-  <!--jQuery first, then Popper.js, then Bootstrap JS-->
+      <!--jQuery first, then Popper.js, then Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 
 
 
-</head>
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
+  <body>
 
+    <!----------------------------------- NAV BAR ------------------->
 
-
-
-<body>
-
-<!----------------------------------- NAV BAR ------------------>
-
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top text">
-  <a class="navbar-brand text-justify" href="https://lauren-clark.github.io/Portfolio/" >Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://lauren-clark.github.io/Portfolio/">Portfolio &nbsp; &nbsp; &nbsp; &nbsp;</a>
+  
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/">Project 1 </span></a>
+      <li class="nav-item justify-content">
+        <a class="nav-link justify" href="https://lauren-clark.github.io/">Project 1&nbsp; </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2 </a>
+        <a class="nav-link" href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2  &nbsp;</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3 &nbsp; &nbsp;</a>
+      </li>
+            <li class="nav-item active">
+        <a class="nav-link" href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4 &nbsp; </a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4</a>
+        <a class="nav-link" href="https://lauren-clark.github.io/Media-Query/">Project 5 &nbsp;</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Media-Query/">Project 5</a>
+        <a class="nav-link" href="https://lauren-clark.github.io/Vacation-Website/">Project 6 &nbsp; &nbsp;</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Vacation-Website/">Project 6</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/FlexBox/">Project 7</a>
+        <a class="nav-link" href="https://lauren-clark.github.io/FlexBox/">Project 7 &nbsp;</a>
       </li>
             <li class="nav-item">
         <a class="nav-link" href="https://lauren-clark.github.io/FlexBoxLandingPage/">Project 8</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9</a>
+        <a class="nav-link" href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9 &nbsp; &nbsp;</a>
       </li>
-
+        
        <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Bootstrap/">Project 10</a>
+        <a class="nav-link" href="https://lauren-clark.github.io/Bootstrap/">Project 10 &nbsp; &nbsp;</a>
       </li>
 
        <li class="nav-item">
         <a class="nav-link" href="https://lauren-clark.github.io/OnlineResume/">Project 11</a>
       </li>
     </ul>
-        
-    </ul>
-    <span class="navbar-text">
-      Click to view!
-    </span>
-  </div>
+    
+</div>
 </nav>
 
+<!--------------------------------------- END NAV -------------------------------->
+    <!-- changed div of class header just to header -->
+    <header>
+     <!-- <font size="7"></font> -->
+     <!-- changed to h1 from fontsize 7 
+          if i take out role="heading" for h1 will it still say it for screenreader?-->
+        <h1>Welcome to our wildlife website</h1>
 
-  <div id="banner"><img src="images/banner1.png" width="760" height="198" alt="CSS: The Missing Manual">
-  </div>
+    <!-- changed div="nav" to nav element
+          don't need to add role="navigation" -->
+    <nav>
+      <ul>
+        <li><a class="https://lauren-clark.github.io/" href="#">Home</a></li>
+        <li><a href="../original/index.html">Our team</a></li>
+        <li><a href="../revised/index.html">Projects</a></li>
+        <li><a href="../improvements/index.html">Blog</a></li>
+      </ul>
+      <!-- added role="search" 
+        added aria-label="Search through site content" to input type-->
+      <form role="search" class="search">
+        <input type="search" name="q" placeholder="Search query" aria-label="Search through site content">
+        <input type="submit" value="Go!">
+      </form>
+    </nav>
+    <!-- moved the ending header tag to include the nav menu which is common practice -->
+    </header>
 
-  <h1>The Amazing World of CSS</h1>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p> 
- <div class="sidebar">
-  <h2>NOTE</h2>
-<p class="note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-</div>
-  <h2>Who Knew CSS Had Such Power?</h2>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-<h2>Not Me!</h2>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <h2>Me Neither!</h2>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-  <div class="copyright"><p>Copyright 2015, The Lorem Ipsum Corporation</p>
-  </div>
-</body>
+    <main>
+      <!-- don't need to add role="article" -->
+      <article>
+        <!-- changing font-size 6 to h2 tag -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <!-- added role=heading unneeded -->
+        <h2 tabindex="0">The trouble with Bears</h2>
+        <!-- took out line breaks x2 -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <p tabindex="0">By Evan Wild</p>
+        <br><br>
+        <!-- added paragraph tags -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <p tabindex="0">Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.</p>
+        <!-- took out line breaks -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <p tabindex="0">So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.</p>
+        <!-- took out line breaks -->
 
+        <!-- changing font-size 5 to h2 tag -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <!-- added role="heading" to h2 unneeded-->
+        <h2 tabindex="0">Types of bear</h2>
+        <!-- took out line breaks -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <p tabindex="0">Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.<p>
+        <!-- took out line breaks -->
+        <!-- added tabindex="0" to make it tabbable -->
+        <p tabindex="0">Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
+        <br><br>
+        <!-- added tabindex="0" for each part of the table so that the user is able to tab through them,
+        role="table" not needed -->
+        <table>
+          <thead>
+            <tr>
+              <td tabindex="0" >Bear Type</td>
+              <td tabindex="0">Coat</td>
+              <td tabindex="0">Adult size</td>
+              <td tabindex="0">Habitat</td>
+              <td tabindex="0">Lifespan</td>
+              <td tabindex="0">Diet</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td tabindex="0">Wild</td>
+              <td tabindex="0">Brown or black</td>
+              <td tabindex="0">1.4 to 2.8 meters</td>
+              <td tabindex="0">Woods and forests</td>
+              <td tabindex="0">25 to 28 years</td>
+              <td tabindex="0">Fish, meat, plants</td>
+            </tr>
+            <tr>
+              <td tabindex="0">Urban</td>
+              <td tabindex="0">North Face</td>
+              <td tabindex="0">18 to 22</td>
+              <td tabindex="0">Condos and coffee shops</td>
+              <td tabindex="0">20 to 32 years</td>
+              <td tabindex="0">Starbucks, sushi</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- might be best to show a table summary (this could be 1 added improvement)-->
+
+        <!-- maybe add a skip to main navigation button -->
+        <!-- maybe add more pictures -->
+        <!-- be my eyes app if you're having trouble accessing this website -->
+        <!-- if you're experiencing any difficulty experiencing these colors, click button to 
+          help color blind people -->
+
+        <!-- changing font-size 6 to h2 tag -->
+        <!-- added tabindex="0" -->
+        <!-- not needed role="heading" to h2 -->
+        <h2 tabindex="0">Habitats and Eating habits</h2>
+        <!-- took out line breaks -->
+        <!-- added tabindex="0" -->
+        <p tabindex="0">Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.</p>
+        <br><br>
+        <!-- added alt description to photo -->
+        <!-- added and tabindex="0"-->
+        <!-- added role="img -->
+        <img src="media/wild-bear.jpg" alt="photo of a wild brown bear in water" tabindex="0" role="img">
+        <br><br>
+        <!-- added tabindex="0" -->
+        <p tabindex="0">Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
+        <br><br>
+        <!-- added alt description to photo -->
+        <!-- added tabindex="0" to make tabbable -->
+        <!-- added role="img -->
+        <img src="media/urban-bear.jpg" alt="black and white photo of bear inside a cage in a zoo" tabindex="0" role="img">
+        <br><br>
+        <p tabindex="0">Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
+        <!-- took out line breaks -->
+        <!-- changing font-size 6 to h2 tag -->
+        <!-- added tabindex="0" -->
+        <!-- add role="heading" to h2 unneeded-->
+        <h2 tabindex="0">Mating rituals</h2>
+        <!-- took out line breaks -->
+        <!-- added tabindex="0" -->
+        <p tabindex="0">Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.</p>
+        <br>
+        <!-- added tabindex="0"-->
+        <p tabindex="0">The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
+        <br><br>
+
+        <audio controls>
+          <source src="media/bear.mp3" type="audio/mp3">
+          <source src="media/bear.ogg" type="audio/ogg">
+          <p>It looks like your browser doesn't support HTML5 audio players.</p>
+        </audio>
+
+        <!-- new transcript button -->
+        <!-- added tabindex="0" to make tabbable
+         and role="button unneeded-->
+        <!-- added aria-pressed="false" -->
+        <button class="accordion" tabindex="0"  aria-pressed="false">Transcript for above audio</button>
+        <!-- added aria-expanded="true" and tabindex="0" to p -->
+        <div class="panel">
+          <!-- NEED TO ADD ROLE TO P TAG-->
+           <p aria-expanded="true" tabindex="0">This isn't really an audio fact file about bears. But it is an audio file that you can transcribe.</p>
+        </div>
+  
+        <!-- added role="complementary" unneeded -->
+        <aside>
+          <!-- changing font-size 6 to h2 tag -->
+          <!-- added role="heading" to h2 unneeded-->
+          <h2 tabindex="0">About the author</h2>
+        <!-- took out line breaks -->
+          <p tabindex="0">Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.</p>
+        <!-- took out line breaks -->
+         <p tabindex="0"> He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
+        </aside>
+
+        <!-- added aria-live"assertive" not sure if this is needed
+          added role="button" and abindex="0" (not allowed) but is not tabbable idk why-->
+        <section class="comments" aria-live="assertive">
+          <div class="show-hide" tabindex="0" role="button">Show comments</div>
+          <!-- want to add some aria attributes -->
+           
+  
+          <!-- this needs to be changed to a button -->
+          <div class="comment-wrapper">
+            <br>
+            <!-- changed to a h3 -->
+            <!-- role="heading" to h3 unneeded
+            abindex="0" not allowed in h3 -->
+            <h3 tabindex="0">Add comment</h3>
+            <br>
+            <form class="comment-form" role="form">
+              <!-- added aria-required="true" 
+                    abindex="0 is not allowed in div class flex pair-->
+              <div class="flex-pair">
+                Your name:
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
+              </div>
+              <!-- added aria-required="true"
+              abindex="0" is NOT ALLOWED -->
+              <div class="flex-pair">
+                Your comment:
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-required="true">
+              </div>
+              <div>
+                <!-- added role="button" is NECESSARY for submit type-->
+                <input type="submit" value="Submit comment">
+              </div>
+            </form>
+            <!-- changing font-size 6 to h2 tag -->
+            <!-- added role="heading" to h2 unneeded-->
+            <h2>Comments</h2>
+
+            <ul class="comment-container">
+
+              <li>
+
+                <p>Bob Fossil</p>
+
+                <p>Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in a truck and driving them outta here. I run a zoo, you know.</p>
+
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <h2 tabindex="0">Additional Help</h2>
+        <p tabindex="0">If you are having any issues viewing this website for various reasons, please <a href="mailto:name@email.com">send us an email</a>
+      </article>
+
+      <div class="secondary">
+        <!-- changing font-size 6 to h2 tag -->
+        <!-- added role="heading" to h2 unneeded-->
+        <h2 tabindex="0">Related</h2>
+
+        <ul>
+          <li><a href="#">The trouble with Bees</a></li>
+          <li><a href="#">The trouble with Otters</a></li>
+          <li><a href="#">The trouble with Penguins</a></li>
+          <li><a href="#">The trouble with Octopi</a></li>
+          <li><a href="#">The trouble with Lemurs</a></li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
 
   <!-- scripts -->
-
+    <script src="main.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+  </body>
 </html>

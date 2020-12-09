@@ -1,9 +1,11 @@
 /* || General setup */
 
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0 10px 0 10px;
+  padding:  0 10px 0 10px;
 }
+
+.navbar .navbar-brand {padding-left: 5px;}
 
 /* Changed background-color to white */
 html {
@@ -12,7 +14,7 @@ html {
 }
 
 body {
-  width: 80%;
+  width: 100%;
   min-width: 1024px;
   margin: 0 auto;
 }
@@ -84,9 +86,9 @@ a:hover {
   color: #FFFFFF;
 }
 
-nav, article, footer, .secondary {
+article, footer, .secondary {
   background-color: #8BDB77;
-}
+} 
 
 article, footer, .secondary {
   padding: 10px 30px;
@@ -107,6 +109,8 @@ nav {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+nav a .active {color: #FFF;}
 
 /* changed div='nav' to nav */
 nav ul {
@@ -130,6 +134,7 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
 /* changed div='nav' to nav */
@@ -321,7 +326,7 @@ audio {
 
 /* Gives a color of the background when hovered */
 .active, .accordion:hover {
-  background-color: #ccc;
+  font: #FFF;
 }
 
 /* Style the accordion panel. Note: hidden by default */
