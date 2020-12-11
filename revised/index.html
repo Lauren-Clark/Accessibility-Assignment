@@ -35,51 +35,34 @@
 
     <!----------------------------------- NAV BAR ------------------->
 
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="https://lauren-clark.github.io/Portfolio/">Portfolio &nbsp; &nbsp; &nbsp; &nbsp;</a>
-  
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item justify-content">
-        <a class="nav-link justify" href="https://lauren-clark.github.io/">Project 1 </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3 </a>
-      </li>
-            <li class="nav-item active">
-        <a class="nav-link" href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Media-Query/">Project 5</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Vacation-Website/">Project 6 </a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/FlexBox/">Project 7 </a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/FlexBoxLandingPage/">Project 8</a>
-      </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9 </a>
-      </li>
-        
-       <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/Bootstrap/">Project 10 </a>
-      </li>
+  <div class="container">
+    <!-- row 1 -->
+    <!-- for mobile this makes the nav bar have a drop down -->
 
-       <li class="nav-item">
-        <a class="nav-link" href="https://lauren-clark.github.io/OnlineResume/">Project 11</a>
-      </li>
-    </ul>
-    
-</div>
-</nav>
+
+
+<div class="btn-group pull-right">
+  <button type="button" class="btn btn-primary">Portfolio</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="https://lauren-clark.github.io/">Project 1</a></li>
+    <li><a href="https://lauren-clark.github.io/Robert-Plant-Tribute/">Project 2</a></li>
+    <li><a href="https://lauren-clark.github.io/Applied-Visual-Design/">Project 3</a></li>
+    <li><a href="https://lauren-clark.github.io/Accessibility-Assignment/revised/index.html">Project 4</a></li>
+    <li><a href="https://lauren-clark.github.io/Media-Query/">Project 5</a></li>
+    <li><a href="https://lauren-clark.github.io/Vacation-Website/">Project 6</a></li>
+    <li><a href="https://lauren-clark.github.io/FlexBox/">Project 7</a></li>
+    <li><a href="https://lauren-clark.github.io/FlexBoxLandingPage/">Project 8</a></li>
+    <li><a href="https://lauren-clark.github.io/PortfolioPageWireframe/">Project 9</a></li>
+    <li><a href="https://lauren-clark.github.io/Bootstrap/">Project 10</a></li>
+    <li><a href="https://lauren-clark.github.io/OnlineResume/">Project 11</a></li>
+  </ul>
+</div> 
+
 
 <!--------------------------------------- END NAV -------------------------------->
     <!-- changed div of class header just to header -->
@@ -140,7 +123,8 @@
         <br><br>
         <!-- added tabindex="0" for each part of the table so that the user is able to tab through them,
         role="table" not needed -->
-        <table>
+
+        <table class="table-responsive">
           <thead>
             <tr>
               <td tabindex="0" >Bear Type</td>
@@ -189,7 +173,7 @@
         <!-- added alt description to photo -->
         <!-- added and tabindex="0"-->
         <!-- added role="img -->
-        <img src="media/wild-bear.jpg" alt="photo of a wild brown bear in water" tabindex="0" role="img">
+        <img src="media/wild-bear.jpg" alt="photo of a wild brown bear in water" tabindex="0" role="img" class="img-fluid">
         <br><br>
         <!-- added tabindex="0" -->
         <p tabindex="0">Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
@@ -197,7 +181,7 @@
         <!-- added alt description to photo -->
         <!-- added tabindex="0" to make tabbable -->
         <!-- added role="img -->
-        <img src="media/urban-bear.jpg" alt="black and white photo of bear inside a cage in a zoo" tabindex="0" role="img">
+        <img class="img-fluid" src="media/urban-bear.jpg" alt="black and white photo of bear inside a cage in a zoo" tabindex="0" role="img">
         <br><br>
         <p tabindex="0">Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
         <!-- took out line breaks -->
@@ -213,11 +197,14 @@
         <p tabindex="0">The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
         <br><br>
 
+        <div class="col-sm-4 col-sm-offset-4 embed-responsive embed-responsive-4by3">
+    <audio controls class="embed-responsive-item">
         <audio controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
+      </div>
 
         <!-- new transcript button -->
         <!-- added tabindex="0" to make tabbable
@@ -241,13 +228,16 @@
          <p tabindex="0"> He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
         </aside>
 
+
+
         <!-- added aria-live"assertive" not sure if this is needed
           added role="button" and abindex="0" (not allowed) but is not tabbable idk why-->
-        <section class="comments" aria-live="assertive">
+   
+          <section class="comments" aria-live="assertive">
           <div class="show-hide" tabindex="0" role="button">Show comments</div>
           <!-- want to add some aria attributes -->
            
-  
+        
           <!-- this needs to be changed to a button -->
           <div class="comment-wrapper">
             <br>
@@ -276,6 +266,7 @@
             </form>
             <!-- changing font-size 6 to h2 tag -->
             <!-- added role="heading" to h2 unneeded-->
+            <div class="col-sm-1">
             <h2>Comments</h2>
 
             <ul class="comment-container">
@@ -292,6 +283,7 @@
 
           </div>
         </section>
+
 
         <h2 tabindex="0">Additional Help</h2>
         <p tabindex="0">If you are having any issues viewing this website for various reasons, please <a href="mailto:name@email.com">send us an email</a>

@@ -13,11 +13,11 @@ html {
   background-color: #FFF;
 }
 
-body {
+/*body {
   width: 100%;
   min-width: 1024px;
   margin: 0 auto;
-}
+} */
 
 /* || typography */
 
@@ -104,7 +104,7 @@ added margin-top to 10px */
 nav {
   height: 50px;
   background-color: #8BDB77;
-  display: flex;
+ display: flex;
   padding: 1% 0;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -117,7 +117,7 @@ nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
-  display: flex;
+ /* display: flex; */
 }
 
 /* changed div='nav' to nav */
@@ -135,6 +135,7 @@ nav a {
   text-decoration: none;
   color: black;
   text-align: center;
+  padding-right: 10px;
 }
 
 /* changed div='nav' to nav */
@@ -320,7 +321,7 @@ audio {
   outline: none;
   transition: 0.4s;
   text-align: center;
-  margin-left: 200px;
+ /* margin-left: 200px; */
   margin-top: 10px;
 }
 
@@ -339,3 +340,61 @@ audio {
   margin-left: 150px;
   margin-top: 10px;
 }
+
+/********************************************* media queries ********************************/
+
+/*mobile view */
+@media only screen and (max-width: 768px) {
+          /* moves the nav to the bottom above footer adjusting order from 1 to 0 */
+          .secondary ul { -webkit-order: 1;
+                 order: 0;
+                 }
+
+                 nav ul {-webkit-flex-wrap: wrap;
+                   flex-wrap: wrap; }
+
+ header, main, nav, footer, figure, figcaption { display: block; }
+                } 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 800px) {
+  html .main .panel h1 h2 table li .comments .comment-form
+  img audio a article footer nav ul label  {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller 
+  }
+}
+
+
+ @media screen and (min-width: 40em) {
+    .ssecondary {
+        display: grid;
+        grid-row: 1/4;
+        column-gap: 20px;
+        row-gap: 20px;}
+
+}}
+
+
+.col-lg-8 {margin-left: -20px;} */
+
+
+
+
